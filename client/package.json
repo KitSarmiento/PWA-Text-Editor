@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "start": "webpack --watchAll"
+    "start": "webpack --watch"
   },
   "author": "2U",
   "license": "UNLICENSED",
@@ -25,10 +25,10 @@
     "workbox-webpack-plugin": "^6.6.0"
   },
   "dependencies": {
+    "code-mirror-themes": "^1.0.0",
     "idb": "^6.1.5"
-  },
-  "version": "1.0.0",
-  "main": "src-sw.js",
-  "keywords": [],
-  "description": ""
+  }
 }
+
+
+
