@@ -18,6 +18,7 @@ The main goal of this project is to create a web-based text editor that meets th
 ## Installation
 
 There are two ways to install the JATE text editor on your device.
+
 Option #1: Deployed Application
 
 1. Click on this link to access the deployed application.
@@ -36,7 +37,7 @@ Option #2: GitHub Repository
 
 3. Run `npm install` to install all necessary dependencies.
 
-4. After installing the dependencies, run `npm start` to start the server.
+4. After installing the dependencies, run `npm run dev` to start the server.
 
 5. In your browser, go to `http://localhost:8080/`. You will be redirected to the application.
 
