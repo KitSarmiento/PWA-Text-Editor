@@ -12,7 +12,6 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
 // Used Module 19 Activity 24 as a reference
 
 // Function to add content to the database
@@ -24,8 +23,8 @@ export const putDb = async (content) => {
   const result = await request;
   console.log("Data saved to the database", result, content);
 };
-// TODO: Add logic for a method that gets all the content from the database
-// Function to get content from the database
+
+// Function to get or retrieve content from the database
 export const getDb = async () => {
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readonly");
