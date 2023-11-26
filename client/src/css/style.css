@@ -11,8 +11,8 @@
 body {
   margin: 0;
   background-color: var(--monoaki);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
@@ -190,6 +190,10 @@ h1 {
 
 .btn.btn-link:hover {
   background-color: #31a9e1;
+}
+
+#buttonInstall {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {

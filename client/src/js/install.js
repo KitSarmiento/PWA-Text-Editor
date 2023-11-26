@@ -14,23 +14,26 @@ window.addEventListener("beforeinstallprompt", (event) => {
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener("click", async () => {
   if (window.deferredPrompt) {
-    // Show the installation prompt
-    window.deferredPrompt.prompt();
+    try {
+      // Wait for the user to respond
+      const choiceResult = await window.deferredPrompt.prompt();
 
-    // Wait for the user to respond
-    const choiceResult = await window.deferredPrompt.userChoice;
+      if (choiceResult.outcome === "accepted") {
+        console.log("User accepted the install prompt");
+      } else {
+        console.log("User dismissed the install prompt");
+      }
 
-    if (choiceResult.outcome === "accepted") {
-      console.log("User accepted the install prompt");
-    } else {
-      console.log("User dismissed the install prompt");
+      // Clear the deferredPrompt
+      window.deferredPrompt = null;
+
+      // Hide the install button.
+      butInstall.style.display = "none";
+    } catch (err) {
+      console.error("Installation error:", err);
     }
-
-    // Clear the deferredPrompt
-    window.deferredPrompt = null;
-
-    // Hide the install button.
-    butInstall.style.display = "none";
+  } else {
+    console.log("No deferredPrompt available");
   }
 });
 

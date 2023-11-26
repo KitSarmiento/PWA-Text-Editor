@@ -20,6 +20,7 @@ module.exports = () => {
         filename: "JATE",
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
         name: "JATE Text Editor",
         short_name: "JATE",
         description: "A text editor that can be accessed through a browser",
@@ -27,6 +28,7 @@ module.exports = () => {
         theme_color: "#36454F",
         start_url: "./",
         publicPath: "./",
+        display: "standalone",
         icons: [
           {
             src: path.resolve("./src/images/logo.png"),
