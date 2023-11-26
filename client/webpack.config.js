@@ -15,13 +15,18 @@ module.exports = () => {
       path: path.resolve(__dirname, "dist"),
       clean: true,
     },
+
+    // List of plugins used in the build process
     plugins: [
+      // Generate HTML file using provided template and title
       new HtmlWebpackPlugin({
         template: "./index.html",
         title: "JATE",
       }),
+
+      // Generate the Webpack PWA manifest for the text editor app
       new WebpackPwaManifest({
-        fingerprints: false,
+        fingerprints: false, // Thanks to Milena Wheatcroft for helping me to ensure that the icon will display in the application.
         name: "JATE Text Editor",
         short_name: "JATE",
         description: "A text editor that can be accessed through a browser",
@@ -38,11 +43,15 @@ module.exports = () => {
           },
         ],
       }),
+
+      // Use Workbox to inject a service worker into the build
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
     ],
+
+    // Module rules for handling different file types
     module: {
       rules: [
         {
