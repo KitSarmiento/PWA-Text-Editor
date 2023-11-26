@@ -21,7 +21,7 @@ There are two ways to install the JATE text editor on your device.
 
 Option #1: Deployed Application
 
-1. Click on this link to access the deployed application.
+1. Click on this ([Link](https://jate-text-editor.onrender.com/)) to access the deployed application.
 
 2. Once you're in the application, click on the "Install" button.
 
@@ -49,7 +49,7 @@ Option #2: GitHub Repository
 
 ## Usage
 
-Deployed Application:
+Deployed Application: https://jate-text-editor.onrender.com/
 
 To access the application, simply navigate to the deployed version. Once you are there, start typing your notes, text, or any content you wish to add into the designated text area. The application automatically saves your work to the database, ensuring you never lose your progress. You can edit your content by adding, deleting, or modifying it as needed.
 
@@ -57,7 +57,7 @@ Project Screenshot:
 
 ![before-installation](https://github.com/KitSarmiento/pwa-text-editor/assets/135483936/8e799713-9369-4d01-8381-14e26a908a8a)
 
-![after-installation](https://github.com/KitSarmiento/pwa-text-editor/assets/135483936/44e9441b-a36c-40f2-84b8-bccb31aca98f)
+![after-installation](https://github.com/KitSarmiento/pwa-text-editor/assets/135483936/9a4e0174-260b-4e27-b85a-7a413df6947d)
 
 ## Credits
 
@@ -75,7 +75,9 @@ Project Screenshot:
 
 • https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide
 
-• www.npmjs.com for all dependencies/packages
+• https://www.npmjs.com - for all dependencies/packages
+
+• https://render.com/
 
 • Class Activities - References from Module 19 for application code.
 
